@@ -47,7 +47,7 @@ function arr2ini(array $a, array $parent = array())
             $out .= '[' . join('.', $sec) . ']' . PHP_EOL;
             $out .= arr2ini($v, $sec);
         } else {
-            $out .= "$k=$v" . PHP_EOL;
+            $out .= $k.'='.'"'.$v.'"' . PHP_EOL;
         }
     }
     return $out;
