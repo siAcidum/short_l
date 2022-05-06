@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^r/([^/\.]+)/?$ ajax/redirect.php?r=$1 [L]
+
+RewriteRule ^short/?$ link.php [L]
